@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
+  <title>Product list with cart</title>
+</head>
+<body>
+
+  <main class="container">
+
+    <!-- ================= PRODUCTS SECTION ================= -->
+    <section class="products">
+
+      <h1>Desserts</h1>
+
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <!-- ================= CART SECTION ================= -->
+    <aside class="cart">
+
+      <h2>Your Cart (<span id="cart-count">0</span>)</h2>
+
+      <div class="cart-items" id="cartItems">
+        <p class="cart-empty">Your added items will appear here</p>
+      </div>
+
+      <div class="cart-total">
+        <p class="total-label">Order Total</p>
+        <p class="total-value">$<span id="cart-total">0.00</span></p>
+      </div>
+
+      <div class="cart-note">
+        <img src="assets/images/icon-carbon-neutral.svg" alt="Carbon neutral delivery">
+        <p>This is a carbon-neutral delivery</p>
+      </div>
+
+      <button class="confirm-button" id="confirmOrderButton">Confirm Order</button>
+      <p class="order-message" id="orderMessage" aria-live="polite"></p>
+    </aside>
+
+  </main>
+
+  <script src="index.js" defer></script>
+</body>
+</html>
